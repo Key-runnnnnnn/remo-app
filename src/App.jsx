@@ -6,6 +6,7 @@ import Banner from "./Components/Banner/Banner"
 import Faq from "./Components/FAQ/Faq"
 import Zymo from "./Components/Zymo/Zymo"
 import Youtube from "./Components/Youtube/Youtube"
+import Refer from "./Components/Refer/Refer"
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
     <Navbar/>
     <Banner/>
     <Zymo/>
+    <Refer/>
     <Youtube/>
     <Faq/>
     <h1 className="text-3xl font-bold underline">
