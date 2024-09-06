@@ -118,7 +118,7 @@ const Featured = () => {
   };
 
   return (
-    <div className="relative py-20 px-14">
+    <div className="relative py-10 px-14">
       <h1 className="text-center text-4xl font-bold mb-8">Featured In</h1>
       <Slider {...settings}>
         {Car.map((car) => (
