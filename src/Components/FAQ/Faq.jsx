@@ -58,7 +58,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen py-10">
       <div id="faq" className="w-full max-w-3xl mx-auto">
         <h2 className="text-4xl text-center font-semibold mb-10">
           Frequently Asked Questions

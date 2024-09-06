@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import Banner from "./Components/Banner/Banner"
 import Faq from "./Components/FAQ/Faq"
 import Zymo from "./Components/Zymo/Zymo"
+import Youtube from "./Components/Youtube/Youtube"
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
     <Navbar/>
     <Banner/>
     <Zymo/>
+    <Youtube/>
     <Faq/>
     <h1 className="text-3xl font-bold underline">
       Hello world!
