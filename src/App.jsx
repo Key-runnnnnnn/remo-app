@@ -3,7 +3,7 @@ import './App.css';
 import { app, analytics } from './firebaseConfig'; // Import Firebase configuration
 import Navbar from "./Components/Navbar/Navbar"
 import Banner from "./Components/Banner/Banner"
-// import Faq from "./Components/FAQ/Faq"
+import Faq from "./Components/FAQ/Faq"
 import Zymo from "./Components/Zymo/Zymo"
 import Youtube from "./Components/Youtube/Youtube"
 import Refer from "./Components/Refer/Refer"
@@ -32,7 +32,7 @@ function App() {
     <Featured/>
     <Reviews/>
     <Youtube/>
-    {/* <Faq/> */}
+    <Faq/>
     <Footer/>
     </>
   );
