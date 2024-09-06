@@ -15,7 +15,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 p-3 bg-slate-300 text-2xl h-20">
+    <header className="sticky top-0 z-50 p-3 bg-white text-2xl h-20">
       <nav
         className="container mx-auto px-6 lg:px-8 flex text-left justify-between h-16"
         aria-label="Global"
@@ -36,11 +36,14 @@ const Navbar = () => {
         <div className="hidden lg:flex lg:gap-x-12 p-2">
           {navigation.map((item) => (
             <div
-              key={item.name}
-              className="cursor-pointer font-normal"
-            >
+            key={item.name}
+            className="relative cursor-pointer font-normal group"
+          >
+            <div className="relative">
               {item.name}
+              <span className="absolute left-0 bottom-0 h-0.5 w-full bg-indigo-700 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </div>
+          </div>
           ))}
         </div>
       </nav>

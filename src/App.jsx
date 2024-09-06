@@ -7,6 +7,7 @@ import Faq from "./Components/FAQ/Faq"
 import Zymo from "./Components/Zymo/Zymo"
 import Youtube from "./Components/Youtube/Youtube"
 import Refer from "./Components/Refer/Refer"
+import Benefits from "./Components/Benefits/Benefits"
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
     <Navbar/>
     <Banner/>
     <Zymo/>
+    <Benefits/>
     <Refer/>
     <Youtube/>
     <Faq/>
