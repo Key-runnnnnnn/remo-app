@@ -101,17 +101,19 @@ const Featured = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          dots: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
@@ -128,7 +130,7 @@ const Featured = () => {
                 <img
                   src={car.image}
                   alt={car.name}
-                  className="w-full h-full object-contain rounded-lg"
+                  className="w-full h-full object-contain rounded-lg mx-auto"
                 />
               </div>
             </a>
