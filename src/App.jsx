@@ -3,7 +3,7 @@ import './App.css';
 import { app, analytics } from './firebaseConfig'; // Import Firebase configuration
 import Navbar from "./Components/Navbar/Navbar"
 import Banner from "./Components/Banner/Banner"
-import Faq from "./Components/FAQ/Faq"
+// import Faq from "./Components/FAQ/Faq"
 import Zymo from "./Components/Zymo/Zymo"
 import Youtube from "./Components/Youtube/Youtube"
 import Refer from "./Components/Refer/Refer"
@@ -11,6 +11,7 @@ import Benefits from "./Components/Benefits/Benefits"
 import Cars from "./Components/Cars/Cars"
 import Featured from "./Components/Featured/Featured"
 import Reviews from "./Components/Reviews/Reviews"
+import Footer from "./Components/Footer/Footer"
 
 function App() {
   useEffect(() => {
@@ -31,10 +32,8 @@ function App() {
     <Featured/>
     <Reviews/>
     <Youtube/>
-    <Faq/>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-      </h1>
+    {/* <Faq/> */}
+    <Footer/>
     </>
   );
 }
