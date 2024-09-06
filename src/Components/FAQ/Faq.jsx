@@ -2,9 +2,16 @@ import React, { useState } from "react";
 
 const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [email, setEmail] = useState("");
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const handleEmailSubmit = (e) => {
+    e.preventDefault();
+    console.log("Email submitted:", email);
+    setEmail(""); // Clear the input field after submission
   };
 
   const faqData = [
@@ -58,7 +65,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center min-h-screen py-16 px-3">
+    <div className="flex flex-col justify-center items-center min-h-screen py-10 px-3">
       <div id="faq" className="w-full max-w-3xl mx-auto">
         <h2 className="sm:text-4xl text-xl text-center font-bold mb-10">
           Frequently Asked Questions
@@ -100,6 +107,30 @@ const Faq = () => {
             </li>
           ))}
         </ul>
+      </div>
+      {/* Email Subscription Section */}
+      <div className="mt-1 w-full max-w-lg bg-gray-100 p-6 rounded-lg shadow-lg">
+        <h3 className="text-2xl mb-4 text-center">
+          Enter your email for the latest updates
+        </h3>
+          <form onSubmit={handleEmailSubmit} className="flex">
+            <div className="flex w-full border border-black rounded-lg overflow-hidden">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Your email address"
+                className="flex-grow p-3 border-none focus:outline-none"
+                required
+              />
+              <button
+                type="submit"
+                className="bg-red-600 text-white px-6 py-3 hover:bg-red-700 transition duration-300"
+              >
+                Get Started
+              </button>
+            </div>
+        </form>
       </div>
     </div>
   );
