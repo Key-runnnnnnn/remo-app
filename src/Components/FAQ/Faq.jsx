@@ -58,9 +58,9 @@ const Faq = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center min-h-screen py-10">
+    <div className="flex justify-center items-center min-h-screen py-10 px-3">
       <div id="faq" className="w-full max-w-3xl mx-auto">
-        <h2 className="text-4xl text-center font-semibold mb-10">
+        <h2 className="sm:text-4xl text-xl text-center font-bold mb-10">
           Frequently Asked Questions
         </h2>
         <ul className="accordion space-y-3">
@@ -68,14 +68,14 @@ const Faq = () => {
             <li key={index} className="border-b">
               <button
                 onClick={() => toggleAccordion(index)}
-                className={`w-full text-left flex justify-between items-center p-4 font-semibold text-white bg-gradient-to-r from-[#58175c] to-[#b34fdb]  rounded-2xl text-xl ${
+                className={`w-full text-left flex justify-between items-center sm:p-4 p-2 font-semibold text-white bg-gradient-to-r from-[#58175c] to-[#b34fdb]  rounded-2xl sm:text-xl ${
                   activeIndex === index
                     ? "bg-gradient-to-r from-[#b34fdb] to-[#58175c] rounded-b-none"
                     : "transition-all duration-1000 rounded-2xl"
                 }`}
               >
                 <span>{faq.question}</span>
-                <span className="text-3xl">
+                <span className="sm:text-3xl text-xl">
                   {activeIndex === index ? "x" : "+"}
                 </span>
               </button>
