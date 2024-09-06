@@ -1,6 +1,6 @@
 import React from "react";
-import gpayapp from "../../assets/gp.png";
-import py from "../../assets/payment.png";
+import gpayapp from "/gp.png";
+import py from "/payment.png";
 
 const InstallApp = () => {
   return (
