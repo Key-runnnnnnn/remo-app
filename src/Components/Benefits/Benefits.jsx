@@ -48,7 +48,7 @@ const Benefits = () => {
         },
       },
       {
-        breakpoint: 600, // For smaller screens
+        breakpoint: 500, // For smaller screens
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -64,20 +64,20 @@ const Benefits = () => {
         {All.map((item, index) => (
           <div
             key={index}
-            className="relative flex flex-col items-center justify-center p-4 group"
+            className="relative flex flex-col items-center text-center justify-center p-4 group"
           >
             <img
               src={item.img}
               alt={item.title}
-              className="w-full h-64 object-cover mb-4 rounded-lg transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-64 object-cover mb-4 rounded-lg transition-transform duration-300 group-hover:scale-105 mx-auto"
               style={{ maxWidth: "320px", maxHeight: "200px" }} // Limits max size
             />
-            <div className="text-center">
+            <div className="">
               <h1 className="text-2xl font-semibold text-purple-700">
                 {item.title}
               </h1>
             </div>
-            <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-gray-700 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 rounded-lg">
+            <p className="absolute inset-0 flex items-center  justify-center text-lg text-white bg-gray-700 bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 rounded-lg">
               {item.desc}
             </p>
           </div>

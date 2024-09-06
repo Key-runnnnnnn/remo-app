@@ -1,5 +1,6 @@
 import React from "react";
-import gpayapp from "../../assets/gp.png";
+import App_store from "/App_store.png"
+import Play_store from "/Play_store.png"
 import py from "../../assets/payment.png";
 
 const InstallApp = () => {
@@ -7,15 +8,22 @@ const InstallApp = () => {
     <div className="w-full md:w-[368px] md:h-[241px]">
       <h3 className="text-xl font-bold mb-4">Install App</h3>
       <p className="mb-3">From App Store or Google Play</p>
-      <div className="flex space-x-2">
-        <a href="https://play.google.com/store/apps/details?id=com.letzrent.letzrentnew" className="text-white px-2 py-2 rounded-md">
-          <img
-            src={gpayapp}
-            alt="Google Play Badge"
-            className="h-16 w-auto inline-block ml-2 pr-5" // Adjusted height and width for the badge
-          />
-        </a>
-      </div>
+      <div className="flex gap-5 justify-center lg:justify-start">
+          <a href="https://play.google.com/store/apps/details?id=com.letzrent.letzrentnew&referrer=utm_source%3Dplaystore%26utm_medium%3Dreferral%26utm_campaign%3Dapp_launch">
+            <img
+              src={Play_store}
+              alt="Play Store"
+              className="w-36 lg:w-44 h-10 lg:h-14"
+            />
+          </a>
+          <a href="https://apps.apple.com/in/app/zymo-self-drive-car-rental/id1547829759?utm_source=apple_ios&utm_medium=referral&utm_campaign=app_launch">
+            <img
+              src={App_store}
+              alt="App Store"
+              className="w-36 lg:w-44 h-10 lg:h-14"
+            />
+          </a>
+        </div>
       <p className="mt-4 mb-4">Secured Payment Gateway</p>
       <div>
         <img src={py} alt="Payment Gateway" className="w-full h-auto" /> {/* Ensures the image scales proportionally */}

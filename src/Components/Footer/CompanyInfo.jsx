@@ -12,7 +12,12 @@ import {
 const CompanyInfo = () => {
   return (
     <div className="w-full md:w-[224px] md:h-[272px] p-4">
-      <img src={zomo} alt="Company Logo" className="bg-white w-[150px] mb-5" />
+      <div className="py-3">
+      <img
+        src={zomo}
+        alt="Company Logo"
+        className="bg-white w-[150px] mb-5 mx-auto"
+      />
       <ul className="space-y-2">
         <li>
           <a href="#" className="hover:text-gray-300 font-bold mb-2">
@@ -30,8 +35,10 @@ const CompanyInfo = () => {
           </a>
         </li>
       </ul>
-      <div className=" flex flex-col items-start text-center mb-4">
-        <div className="font-bold mb-5">Follow Us</div>
+      </div>
+      
+      <div className=" flex flex-col  text-center items-center mb-4">
+      <h1 className="font-bold p-1 ">Follow Us</h1>
         <div className="flex">
           <a href="#" className="mr-4 hover:text-gray-300">
             <FontAwesomeIcon icon={faFacebook} size="2x" />
