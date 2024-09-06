@@ -68,10 +68,10 @@ const Faq = () => {
             <li key={index} className="border-b">
               <button
                 onClick={() => toggleAccordion(index)}
-                className={`w-full text-left flex justify-between items-center p-4 font-semibold text-white bg-gradient-to-r from-[#58175c] to-[#b34fdb] rounded-t-2xl text-xl ${
+                className={`w-full text-left flex justify-between items-center p-4 font-semibold text-white bg-gradient-to-r from-[#58175c] to-[#b34fdb]  rounded-2xl text-xl ${
                   activeIndex === index
-                    ? "bg-gradient-to-r from-[#b34fdb] to-[#58175c]"
-                    : ""
+                    ? "bg-gradient-to-r from-[#b34fdb] to-[#58175c] rounded-b-none"
+                    : "transition-all duration-1000 rounded-2xl"
                 }`}
               >
                 <span>{faq.question}</span>
@@ -80,7 +80,7 @@ const Faq = () => {
                 </span>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-500 ${
+                className={`overflow-hidden transition-all duration-300 ${
                   activeIndex === index ? "max-h-screen" : "max-h-0"
                 }`}
               >
