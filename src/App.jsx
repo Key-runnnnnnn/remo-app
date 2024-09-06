@@ -3,6 +3,7 @@ import './App.css';
 import { app, analytics } from './firebaseConfig'; // Import Firebase configuration
 import Navbar from "./Components/Navbar/Navbar"
 import Banner from "./Components/Banner/Banner"
+import Faq from "./Components/FAQ/Faq"
 
 function App() {
   useEffect(() => {
@@ -18,7 +19,8 @@ function App() {
     <Banner/>
     <h1 className="text-3xl font-bold underline">
       Hello world!
-    </h1>
+      </h1>
+    <Faq/>
     </>
   );
 }
